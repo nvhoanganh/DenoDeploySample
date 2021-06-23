@@ -1,3 +1,4 @@
+console.log("hello");
 addEventListener("fetch", (event) => {
 	const data = {
 		lightSpeed: [
@@ -29,8 +30,8 @@ addEventListener("fetch", (event) => {
 				["Transaction ref"]: "11111",
 			},
 		],
-  };
-  
+	};
+
 	event.respondWith(
 		new Response(JSON.stringify(data), {
 			headers: {

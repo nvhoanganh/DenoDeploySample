@@ -1,3 +1,5 @@
+import format from "https://deno.land/x/date_fns@v2.22.1/format/index.js";
 addEventListener("fetch", (event: any) => {
-  event.respondWith(new Response("This direct typescript file"));
+	const d = format(new Date(), "yyyy-MM-dd", null);
+	event.respondWith(new Response(`current Date is ${d}`));
 });
